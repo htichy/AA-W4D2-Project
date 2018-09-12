@@ -1,0 +1,21 @@
+<h1>I haz cats</h1>
+
+<table>
+    <caption>The cat is:</caption>
+    <tr>
+        <th scope="col"> <%= Cat.column_names[0] %> </th>
+        <th scope="col"> <%= Cat.column_names[1] %> </th>
+        <th scope="col"> <%= Cat.column_names[2] %> </th>
+        <th scope="col"> <%= Cat.column_names[3] %> </th>
+        <th scope="col"> <%= Cat.column_names[4] %> </th>
+        <th scope="col"> <%= Cat.column_names[5] %> </th>
+    </tr>
+    <tr>
+        <th scope="row"> <%= @cat.id %> </th>
+        <td> <%= @cat.birth_date %> </td>
+        <td> <%= @cat.color %> </td>
+        <td> <%= @cat.name %> </td>
+        <td> <%= @cat.sex %> </td>
+        <td> <%= @cat.description %> </td>
+    </tr>
+</table>
